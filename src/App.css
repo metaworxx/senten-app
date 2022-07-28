@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.home {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #e4e4e4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.home-nav {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 99;
+}
+.home-nav-button {
+  background: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.home-nav-button:hover,
+.home-nav-button.active {
+  color: rgba(255, 255, 255, 0.6);
+}
+.comment-bar {
+  position: absolute;
+  right: 30px;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+.comment-bar button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.comment-bar button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.share-button {
+  background: url(../public/images/icons/share-icon.svg);
+}
+
+.heart-button {
+  background: url(../public/images/icons/heart-icon.svg);
+}
+.comment-button {
+  background: url(../public/images/icons/comment-icon.svg);
+}
+.for-me {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+}
+.card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+.card .content {
+  position: relative;
+}
+.card:nth-child(odd) {
+  background-color: red;
+}
+.card:nth-child(even) {
+  background-color: blue;
+}
+.bottom-bar {
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  gap: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.bottom-bar button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.add-button {
+  background: url(../public/images/icons/add-icon.svg) no-repeat;
+}
+.home-button {
+  background: url(../public/images/icons/home-icon.svg) no-repeat;
+}
+.search-button {
+  background: url(../public/images/icons/search-icon.svg) no-repeat;
+}
+.profile-button {
+  background: url(../public/images/icons/profile-icon.svg) no-repeat;
+}
+.messages-button {
+  background: url(../public/images/icons/inbox-icon.svg) no-repeat;
+}
+.card-1 {
+  background: url(../public/images/dummy/bg1.jpg);
+}
+.card-2 {
+  background: url(../public/images/dummy/bg2.jpg);
+}
+.card-3 {
+  background: url(../public/images/dummy/bg3.jpg);
+}
+.card-4 {
+  background: url(../public/images/dummy/bg4.jpg);
+}
+.card-3 p {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.card-4 {
+  color: white;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
